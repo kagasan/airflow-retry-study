@@ -13,7 +13,7 @@ Airflowの自動リトライ設定をいい感じにカスタマイズしてヒ�
 on_retry_callbackを導入するとよいです。
 - https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/logging-monitoring/callbacks.html
 
-on_retry_callbackは最初のリトライ時に呼ばれるため、リトライ回数やリトライ間隔を多めに設定していても早めに状況を把握できます。
+on_retry_callbackはリトライ時に呼ばれるため、リトライ回数やリトライ間隔を多めに設定していてもon_failure_callbackより早めに状況を把握できます。
 ![image](https://github.com/kagasan/airflow-retry-study/assets/2450046/fb970b01-79fc-45d7-9a5b-ec7b5999babc)
 
 
